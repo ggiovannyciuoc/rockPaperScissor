@@ -1,1 +1,78 @@
+*{
+
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+
+}
+
+body{
+
+    background-color:#0f0c0d;
+}
+header{
+
+    text-align: center;
+    background-color:#f5d27c ;
+    padding: 20px;
+}
+
+#players{
+
+    width: 450px;
+    margin: auto;
+    display:grid;
+    background-color:#44304e;
+    grid-template-columns:50% 50%;
+    padding: 5px;
+    text-align: center;   
+}
+
+
+p{
+
+    background-color:#9d4974 ;
+    color:white;
+    padding:10px;
+
+}
+
+
+
+.player{
+    background-color: #03010a;
+    margin:5px;
+    height:150px; 
+}
+
+#options{
+
+    width:450px;
+    margin: auto;
+    display:grid;
+    background-color:#564458;
+    grid-template-columns:33% 33% 33%;
+    padding: 5px;
+    text-align: center;   
+}
+
+.buttons{
+
+    background-color:black ;
+    padding:15px;
+    margin:15px;
+    border-color:#9d4974;
+    border-style: double;
+    border-radius:50%;
+    text-align: center;
+    border-width: 4px;
+
+}
+
+.buttons:hover{
+
+    cursor: pointer;
+    border-color: goldenrod;
+
+}
 
