@@ -3,6 +3,7 @@ var player_option_selected=0;
 var pc_selec=0;
 var py_score=0;
 var pc_score=0;
+var draw=0;
 
 document.getElementById("btn_rock").addEventListener("click", function() {
    
@@ -47,7 +48,7 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         if (player_option_selected===0 && pc_selec===1)
         {
             
-            document.getElementById("message").innerHTML = "PC wins!";
+            document.getElementById("message").innerHTML = " PC wins!";
             pc_score+=1;
             document.getElementById("pc_s").innerHTML = pc_score;
         }
@@ -55,14 +56,14 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         else if (player_option_selected===0 && pc_selec===2)
         {
             
-            document.getElementById("message").innerHTML = "PLAYER wins!";
+            document.getElementById("message").innerHTML = " PLAYER wins!";
             py_score+=1;
             document.getElementById("py_s").innerHTML = py_score;
         }
 
         else if (player_option_selected===1 && pc_selec===0){
             
-            document.getElementById("message").innerHTML = "PLAYER wins!";
+            document.getElementById("message").innerHTML = " PLAYER wins!";
             
             py_score+=1;
             document.getElementById("py_s").innerHTML = py_score;
@@ -71,7 +72,7 @@ document.getElementById("btn_rock").addEventListener("click", function() {
 
         else if (player_option_selected===1 && pc_selec===2)
         {
-            document.getElementById("message").innerHTML = "PC wins!";
+            document.getElementById("message").innerHTML = " PC wins!";
             pc_score+=1;
             document.getElementById("pc_s").innerHTML = pc_score;
         }
@@ -79,7 +80,7 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         else if (player_option_selected===2 && pc_selec===1)
         {
             
-            document.getElementById("message").innerHTML = "PLAYER wins!";
+            document.getElementById("message").innerHTML = " PLAYER wins!";
             py_score+=1;
             document.getElementById("py_s").innerHTML = py_score;
         }
@@ -87,7 +88,7 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         else if (player_option_selected===2 && pc_selec===0)
         {
             
-            document.getElementById("message").innerHTML = "PC wins!";
+            document.getElementById("message").innerHTML = " PC wins!";
             pc_score+=1;
             document.getElementById("pc_s").innerHTML = pc_score;
         }
@@ -95,6 +96,8 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         else{
             
             document.getElementById("message").innerHTML = "DRAW!";
+            draw+=1;
+            document.getElementById("draw_s").innerHTML = draw;
         
         }
 
