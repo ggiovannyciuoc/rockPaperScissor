@@ -7,7 +7,7 @@
         <title>Rock Paper Scissors JavaScript Game</title>
         <meta charset="utf-8"> 
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
+        
         
     </head>
 
@@ -21,26 +21,30 @@
 
         </header>
 
+            <p >Can you beat the PC?<span id="message"></span></p>
             <div id="players">
                 
-                <div class="player">
+                <div class="player" id="you">
                     <p>You</p>
+                    <img id="player_selection" src="" width="70px" height="70px" title="Player selection" alt="player selection">
+
                 </div>
                 
-                <div class="player">
+                <div class="player" id="pc">
                     <p>Computer</p>
+                    <img id="pc_selection" src="" width="70px" height="70px" title="Player selection" alt="player selection">
                 </div>
         </div>
 
         <div id="options">
 
-            <div class="buttons"> <img src="img/rock1.png" width="70px" height="70px" alt="rock"></div>
-            <div class="buttons"> <img src="img/paper1.png" width="70px" height="70px"alt="paper"></div>
-            <div class="buttons"> <img src="img/scissors1.png" width="70px" height="70px" alt="scissors"></div>
+            <div class="buttons" id="btn_rock"> <img src="img/rock1.png" width="70px" height="70px" title="Click to select Rock" alt="rock"></div>
+            <div class="buttons" id="btn_paper"> <img src="img/paper1.png" width="70px" height="70px" title="Click to select Paper" alt="paper"></div>
+            <div class="buttons" id="btn_scissors"> <img src="img/scissors1.png" width="70px" height="70px" title="Click to select Scissors" alt="scissors"></div>
 
         </div>
         
-
+        <script src="js/script.js"></script>
     </body>
 </main>
  </html>

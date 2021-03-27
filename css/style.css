@@ -34,9 +34,21 @@ p{
     background-color:#9d4974 ;
     color:white;
     padding:10px;
+    margin-bottom:20px;
+    text-align: center;
 
 }
 
+#message{
+
+    background-color:#9d4974 ;
+    color:white;
+    padding:10px;
+    margin-bottom:20px;
+    text-align: center;
+    font-size: 1.6rem;
+
+}
 
 
 .player{
