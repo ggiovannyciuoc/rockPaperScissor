@@ -54,7 +54,11 @@ document.getElementById("btn_rock").addEventListener("click", function() {
             document.getElementById("message").innerHTML = "PLAYER wins!";
         }
 
-        else if (player_option_selected===1 && pc_selec===0){alert("PLAYER wins")}
+        else if (player_option_selected===1 && pc_selec===0){
+            
+            document.getElementById("message").innerHTML = "PLAYER wins!";
+        
+        }
 
         else if (player_option_selected===1 && pc_selec===2)
         {
@@ -65,6 +69,12 @@ document.getElementById("btn_rock").addEventListener("click", function() {
         {
             
             document.getElementById("message").innerHTML = "PLAYER wins!";
+        }
+
+        else if (player_option_selected===2 && pc_selec===0)
+        {
+            
+            document.getElementById("message").innerHTML = "PC wins!";
         }
         
         else{
